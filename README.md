@@ -1,4 +1,5 @@
 🌍 API Integration Project
+
 📋 Project Overview
 A full-stack web application that integrates multiple third-party APIs to display comprehensive user profiles with country information, exchange rates, and relevant news articles. The application demonstrates server-side API integration, data processing, and clean frontend presentation.
 

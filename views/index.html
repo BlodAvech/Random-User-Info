@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>API</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="profile">
+	<div class="profile_icon" id="icon">
+	</div>
+	
+	<div class="profile_name">
+		<div class="profile_label">Name</div>
+		<div class="profile_name_first profile_text" id="name"></div>
+		<div class="profile_label">Surname</div>
+		<div class="profile_name_last profile_text" id="surname"></div>
+	</div>
+	
+	<div class="profile_gender">
+		<div class="profile_label">Gender</div>
+		<div class="profile_gender_value profile_text" id="gender"></div>
+	</div>
+	
+	<div class="profile_dob">
+		<div class="profile_label">Date of Birdth</div>
+		<div class="profile_dob_date profile_text" id="dob"></div>
+		<div class="profile_label">Age</div>
+		<div class="profile_dob_age profile_text" id="age"></div>
+	</div>
+	
+	<div class="profile_flag" id="flag"></div>
+	<div class="profile_location">
+		<div class="profile_label">Country</div>
+		<div class="profile_location_country profile_text" id="country"></div>
+		<div class="profile_label">City</div>
+		<div class="profile_location_city profile_text" id="city"></div>
+		<div class="profile_label">Address</div>
+		<div class="profile_location_address profile_text" id="address"></div>
+	</div>
+	
+	<div class="profile_country">
+		<div class="profile_label">Capital</div>
+		<div class="profile_text" id="capital"></div>
+
+		<div class="profile_label">Currency</div>
+		<div class="profile_text" id="currency"></div>
+
+		<div class="profile_exchange">
+			<div class="profile_label">Exchange rate</div>
+			<div class="profile_text" id="exchange_usd"></div>
+			<div class="profile_text" id="exchange_kzt"></div>
+		</div>
+	</div>
+
+	<div class="profile_news">
+		<div class="profile_label">News</div>
+		<div id="articles"></div>
+	</div>
+
+	<button class="profile_button_generate" id="randomuser_button">Generate</button>
+	</div>
+</body>
+
+<script src="/script.js"></script>
+</html>

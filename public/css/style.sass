@@ -1,0 +1,162 @@
+$primary: #4361ee
+$secondary: #4cc9f0
+$bg-light: #e8f4ff
+$text-dark: #2b2d42
+$label: #6c757d
+
+body
+	font-family: 'Segoe UI', sans-serif
+	background: #f5f7fb
+
+.profile
+	max-width: 400px
+	margin: 2rem auto
+	background: white
+	border-radius: 20px
+	padding: 2rem
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+	text-align: center
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 3px
+		background: $primary
+
+	.profile_icon
+		width: 100px
+		height: 100px
+		margin: 0 auto 1rem
+		border: 3px solid $primary
+		border-radius: 50%
+		overflow: hidden
+
+		&_img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	.profile_label
+		font-size: 0.8rem
+		color: $label
+		margin: 0.5rem 0 0.2rem
+		font-weight: 600
+
+	.profile_text
+		font-size: 1rem
+		color: $text-dark
+		padding: 0.6rem
+		background: $bg-light
+		border-radius: 8px
+		margin-bottom: 0.3rem
+		min-height: 2.2rem
+
+	.profile_name_first,
+	.profile_name_last
+		font-size: 1.2rem
+		font-weight: 600
+
+	.profile_gender_value
+		color: $primary
+		font-weight: 600
+
+	.profile_dob
+		display: grid
+		grid-template-columns: 1fr 1fr
+		gap: 0.8rem
+		margin-bottom: 1rem
+
+		&_age
+			color: $secondary
+			font-weight: 600
+
+	.profile_location,
+	.profile_country
+		margin-bottom: 1rem
+
+	.profile_news
+		margin-top: 1rem
+		text-align: left
+
+	#articles
+		max-height: 260px
+		overflow-y: auto
+
+	.article_card
+		display: flex
+		gap: 0.6rem
+		margin-bottom: 0.6rem
+		padding: 0.6rem
+		background: $bg-light
+		border-radius: 10px
+
+	.article_img
+		width: 70px
+		height: 55px
+		object-fit: cover
+		border-radius: 6px
+		flex-shrink: 0
+
+	.article_body
+		display: flex
+		flex-direction: column
+
+	.article_title
+		font-size: 0.85rem
+		font-weight: 600
+		color: $text-dark
+		text-decoration: none
+		line-height: 1.2
+
+		&:hover
+			color: $primary
+
+	.article_desc
+		font-size: 0.75rem
+		color: $label
+		margin-top: 0.2rem
+
+	.profile_button_generate
+		height: 2.8rem
+		width: 100%
+		background: $primary
+		border: none
+		border-radius: 10px
+		color: white
+		font-size: 1rem
+		font-weight: 600
+		cursor: pointer
+		margin-top: 0.8rem
+
+		&:hover
+			background: darken($primary, 8%)
+
+	.profile_flag
+		margin: 0.5rem auto 1rem
+		width: 100%
+
+		&_img
+			width: 100%
+			border-radius: 20px
+			box-shadow: 0 2px 6px rgba(0,0,0,0.15)
+
+
+@media (max-width: 480px)
+	.profile
+		margin: 1rem
+		padding: 1.5rem
+
+		.profile_icon
+			width: 80px
+			height: 80px
+
+		.profile_text
+			font-size: 0.9rem
+			padding: 0.5rem
+
+		.profile_dob
+			grid-template-columns: 1fr

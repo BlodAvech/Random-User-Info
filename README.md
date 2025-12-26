@@ -3,8 +3,8 @@
   Project Overview
 A full-stack web application that integrates multiple third-party APIs to display comprehensive user profiles with country information, exchange rates, and relevant news articles. The application demonstrates server-side API integration, data processing, and clean frontend presentation.
 
-  Features
-  Core Functionality
+✨ Features
+✅ Core Functionality
 Random User Generation - Fetches random user data from RandomUser API
 
 Country Information - Retrieves detailed country data based on user's location
@@ -32,7 +32,7 @@ Axios - HTTP client for API requests
 
 dotenv - Environment variable management
 
-Frontend
+  Frontend
 HTML5 - Semantic markup
 
 CSS3 - Styling with responsive design
@@ -41,7 +41,7 @@ jQuery - DOM manipulation and AJAX
 
 Vanilla JavaScript - Core functionality
 
-APIs Used
+  APIs Used
 RandomUser API - https://randomuser.me/api/
 
 REST Countries API - https://restcountries.com/

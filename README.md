@@ -3,8 +3,8 @@
   Project Overview
 A full-stack web application that integrates multiple third-party APIs to display comprehensive user profiles with country information, exchange rates, and relevant news articles. The application demonstrates server-side API integration, data processing, and clean frontend presentation.
 
-✨ Features
-✅ Core Functionality
+  Features
+  Core Functionality
 Random User Generation - Fetches random user data from RandomUser API
 
 Country Information - Retrieves detailed country data based on user's location

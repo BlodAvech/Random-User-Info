@@ -18,21 +18,6 @@ $(document).ready(function(){
 
 	const $flag = $('#flag')
 
-	init();
-
-	function init()
-	{
-		$icon.html('<img src="/images/user.png" alt="Аватар" class="profile_icon_img" id="icon">')
-		$name.text('Erkhan');
-		$surname.text('Piriyev');
-		$gender.text('Male');
-		$age.text('19');
-		$dob.text('15.02.2007');
-		$country.text('KZ');
-		$city.text('Shym');
-		$address.text('147BN');
-	}
-
 	$('#randomuser_button').click(function(){
 		$.ajax({
 			url: "/randomuser",

@@ -31,7 +31,7 @@ app.get('/randomuser', async (req, res) => {
         const currencyExchange = response.data.conversion_rates
         
         //news
-        response = await axios.get(`https://newsapi.org/v2/everything?q=${countryName}&language=en&apiKey=${process.env.NEWS_API_KEY}`)
+        response = await axios.get(`https://newsapi.org/v2/everything?q=${encodeURIComponent(countryName)}&language=en&apiKey=${process.env.NEWS_API_KEY}`)
         const news = response.data
 
         const filtered = news.articles.filter(a =>
@@ -82,6 +82,7 @@ app.get('/randomuser', async (req, res) => {
 
     }catch (error) {
         console.error('Error fetching data:', error);
+        res.status(500).json({ error: 'Error fetching data' });
     }
 });
 
